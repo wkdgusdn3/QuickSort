@@ -10,12 +10,8 @@ public class QuickSort {
 	
 	void sort(int first, int last) {
 		
-		
-		System.out.println("first : " + first + " last : " + last);
-//		printArray();
-		
-		if(first == last || last < 0) {
-			
+		if(first>=last) {
+			return;
 		} else{
 			int key = array.get(first);
 			int i = first;
@@ -46,13 +42,6 @@ public class QuickSort {
 	
 	void printArray() {
 		for(int i=0; i<array.size(); i++) {
-			System.out.print(array.get(i) + " ");			
-		}
-		System.out.println();
-	}
-	
-	void printSubArray(int first, int last) {
-		for(int i=first; i<=last; i++) {
 			System.out.print(array.get(i) + " ");			
 		}
 		System.out.println();
